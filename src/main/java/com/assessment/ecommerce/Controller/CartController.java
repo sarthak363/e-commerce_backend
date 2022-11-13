@@ -36,5 +36,21 @@ public class CartController {
         return new ResponseEntity<CartDto>(cartDto, HttpStatus.OK);
     }
 
+    @PutMapping("/update/{cid}")
+    public void updateCartItem(@PathVariable(name = "cid") Integer cid,@RequestBody AddToKart addToKart){
+        cartService.updateCartItem(cid,addToKart);
+    }
+    @DeleteMapping("/delete/{id}")
+    public void deleteByProductId(@PathVariable(name = "id") Integer pId,@PathVariable(name = "cId") Integer cId){
+        cartService.deleteCartItem(pId,cId);
+    }
+    @DeleteMapping("/delete")
+    public void deleteAllCartItems(@PathVariable(name = "cId") Integer cId){
+        Customer customer=customerService.getCustomerById(cId);
+        cartService.deleteAllItems(customer);
+
+    }
+
+
 
 }
