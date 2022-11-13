@@ -1,0 +1,1 @@
+ALTER TABLE customer ADD mobile varchar(20) NULL;

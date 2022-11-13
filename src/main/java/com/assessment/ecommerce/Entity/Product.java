@@ -18,7 +18,6 @@ public class Product {
     @Column
     private Long pin;
 
-
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
     private List<Cart> carts;
 

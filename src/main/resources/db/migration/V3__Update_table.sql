@@ -1,0 +1,1 @@
+ALTER TABLE customer ADD age INT NOT NULL;
