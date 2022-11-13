@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer customer_ID;
+    private Integer customerId;
 
     private String Name;
     private Long pin;
@@ -39,12 +39,12 @@ public class Customer {
         this.pin = pin;
     }
 
-    public Integer getCustomer_ID() {
-        return customer_ID;
+    public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_ID(Integer customer_ID) {
-        this.customer_ID = customer_ID;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

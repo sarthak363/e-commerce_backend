@@ -1,6 +1,8 @@
 package com.assessment.ecommerce.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
@@ -16,8 +18,9 @@ public class Cart {
     private Integer quantity;
 
     @JsonIgnore
-    @OneToOne(targetEntity = Customer.class,fetch = FetchType.EAGER)
-    @JoinColumn(nullable = false,name = "customer_ID")
+    @ManyToOne(targetEntity = Customer.class,fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(nullable = false,name = "customerId")
+    @OnDelete(action= OnDeleteAction.CASCADE)
     private Customer customer;
 
     public Integer getQuantity() {

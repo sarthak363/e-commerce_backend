@@ -25,6 +25,10 @@ public class CustomerService {
         return optionalCustomer.get();
     }
 
+    public void deleteCustomerById(int Id){
+        Customer customer = getCustomerById(Id);
+        customerRepo.deleteByCustomerId(Id);
+    }
 
 
 }
