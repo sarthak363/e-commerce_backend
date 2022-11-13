@@ -16,7 +16,7 @@ public class Product {
     @Column
     private Double weight;
     @Column
-    private String pin;
+    private Long pin;
 
 
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
@@ -25,7 +25,7 @@ public class Product {
 
     public Product(){}
 
-    public Product(String name, Double price, Double weight, String pin) {
+    public Product(String name, Double price, Double weight, Long pin) {
         this.name = name;
         this.price = price;
         this.weight = weight;
@@ -65,11 +65,11 @@ public class Product {
         this.weight = weight;
     }
 
-    public String getPin() {
+    public Long getPin() {
         return pin;
     }
 
-    public void setPin(String pin) {
+    public void setPin(Long pin) {
         this.pin = pin;
     }
 }

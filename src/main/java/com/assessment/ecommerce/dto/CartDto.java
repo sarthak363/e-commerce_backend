@@ -6,13 +6,21 @@ public class CartDto {
     private List<CartItemDto> cartItemDtos;
     private double totalCost;
     private double totalWeight;
-
-
-    public CartDto(List<CartItemDto> cartItemDtos, double totalCost,double totalWeight) {
+    private int totalShippingCharge;
+    public CartDto(List<CartItemDto> cartItemDtos, double totalCost,double totalWeight,int totalShippingCharge) {
         this.cartItemDtos = cartItemDtos;
         this.totalCost = totalCost;
         this.totalWeight = totalWeight;
+        this.totalShippingCharge=totalShippingCharge;
 
+    }
+
+    public int getTotalShippingCharge() {
+        return totalShippingCharge;
+    }
+
+    public void setTotalShippingCharge(int totalShippingCharge) {
+        this.totalShippingCharge = totalShippingCharge;
     }
 
     public List<CartItemDto> getCartItemDtos() {

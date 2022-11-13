@@ -10,11 +10,11 @@ public class Customer {
     private Integer customer_ID;
 
     private String Name;
-    private String pin;
+    private Long pin;
 
     public Customer(){}
 
-    public Customer(String name, String pin) {
+    public Customer(String name, Long pin) {
         Name = name;
         this.pin = pin;
     }
@@ -35,11 +35,11 @@ public class Customer {
         Name = name;
     }
 
-    public String getPin() {
+    public Long getPin() {
         return pin;
     }
 
-    public void setPin(String pin) {
+    public void setPin(Long pin) {
         this.pin = pin;
     }
 }

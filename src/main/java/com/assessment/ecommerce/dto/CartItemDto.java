@@ -14,6 +14,7 @@ public class CartItemDto {
         this.id = cart.getCart_Id();
         this.quantity = cart.getQuantity();
         this.product = cart.getProduct();
+
     }
 
     @Override
