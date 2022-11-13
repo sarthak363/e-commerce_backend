@@ -12,6 +12,26 @@ public class Customer {
     private String Name;
     private Long pin;
 
+    private String mobile;
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    private int age;
+
     public Customer(){}
 
     public Customer(String name, Long pin) {
