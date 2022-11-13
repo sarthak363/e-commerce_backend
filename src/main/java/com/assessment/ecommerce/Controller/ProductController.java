@@ -5,6 +5,8 @@ import com.assessment.ecommerce.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/product")
 public class ProductController {
@@ -16,8 +18,8 @@ public class ProductController {
         return (productService.addProduct(product)).toString();
     }
     @GetMapping("/all")
-    public String listAllProduct(){
-        return (productService.listProduct()).toString();
+    public List<Product> listAllProduct(){
+        return (productService.listProduct());
     }
 
     @GetMapping("/{pId}")
