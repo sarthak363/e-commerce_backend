@@ -26,7 +26,17 @@ REST API
 
 Spring Data Jpa
 
-DATABSE SCHEMA:
+DATABASE SCHEMA:
 
-![image](https://user-images.githubusercontent.com/95265681/201531063-b324d2b3-8b59-4602-825b-406911c46956.png)
+<img width="466" alt="Capture" src="https://user-images.githubusercontent.com/95265681/201543932-872a5081-9a8b-4139-9549-aee32f2a3cf4.PNG">
+
+
+ADD ITEMS IN THE CART:
+
+<img width="638" alt="Capture1" src="https://user-images.githubusercontent.com/95265681/201543937-fabd9a3f-ea0b-4a34-99bd-94648dab89ea.PNG">
+
+LIST ITEMS IN CART, SHIPPING CHARGES, TOTAL WEIGHT OF CART, TOTAL PRICE BEFORE AND AFTER DISCOUNT:
+
+<img width="721" alt="Capture2" src="https://user-images.githubusercontent.com/95265681/201543975-a04118d4-cda1-46ad-9283-ce4373e9cc45.PNG">
+
 
