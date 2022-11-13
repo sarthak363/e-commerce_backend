@@ -4,15 +4,36 @@ import java.util.List;
 
 public class CartDto {
     private List<CartItemDto> cartItemDtos;
-    private double totalCost;
+    private double totalProductCost;
     private double totalWeight;
     private int totalShippingCharge;
-    public CartDto(List<CartItemDto> cartItemDtos, double totalCost,double totalWeight,int totalShippingCharge) {
+
+    private double discounted;
+    private double totalPrice;
+    public CartDto(List<CartItemDto> cartItemDtos, double totalCost,double totalWeight,int totalShippingCharge,double discounted,double totalPrice) {
         this.cartItemDtos = cartItemDtos;
-        this.totalCost = totalCost;
+        this.totalProductCost = totalCost;
         this.totalWeight = totalWeight;
         this.totalShippingCharge=totalShippingCharge;
+        this.discounted=discounted;
+        this.totalPrice=totalPrice;
 
+    }
+
+    public double getDiscounted() {
+        return discounted;
+    }
+
+    public void setDiscounted(double discounted) {
+        this.discounted = discounted;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
     }
 
     public int getTotalShippingCharge() {
@@ -31,12 +52,12 @@ public class CartDto {
         this.cartItemDtos = cartItemDtos;
     }
 
-    public double getTotalCost() {
-        return totalCost;
+    public double getTotalProductCost() {
+        return totalProductCost;
     }
 
-    public void setTotalCost(double totalCost) {
-        this.totalCost = totalCost;
+    public void setTotalProductCost(double totalProductCost) {
+        this.totalProductCost = totalProductCost;
     }
 
     public double getTotalWeight() {
