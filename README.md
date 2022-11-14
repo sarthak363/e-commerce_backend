@@ -40,3 +40,4 @@ LIST ITEMS IN CART, SHIPPING CHARGES, TOTAL WEIGHT OF CART, TOTAL PRICE BEFORE A
 <img width="721" alt="Capture2" src="https://user-images.githubusercontent.com/95265681/201543975-a04118d4-cda1-46ad-9283-ce4373e9cc45.PNG">
 
 
+
