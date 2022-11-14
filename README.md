@@ -26,6 +26,12 @@ REST API
 
 Spring Data Jpa
 
+Database Migration Using Flyway
+
+Junit
+
+Mockito
+
 DATABASE SCHEMA:
 
 <img width="466" alt="Capture" src="https://user-images.githubusercontent.com/95265681/201543932-872a5081-9a8b-4139-9549-aee32f2a3cf4.PNG">
@@ -40,4 +46,9 @@ LIST ITEMS IN CART, SHIPPING CHARGES, TOTAL WEIGHT OF CART, TOTAL PRICE BEFORE A
 <img width="721" alt="Capture2" src="https://user-images.githubusercontent.com/95265681/201543975-a04118d4-cda1-46ad-9283-ce4373e9cc45.PNG">
 
 
+Screenshot of Unit test Case passed:
+
+Adding customer:
+
+![image](https://user-images.githubusercontent.com/95265681/201596716-82fc0a0c-ed5f-4ea6-8d12-439938e20488.png)
 
